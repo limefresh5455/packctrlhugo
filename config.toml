@@ -1,0 +1,97 @@
+title = "PackControl"
+baseURL = ""
+theme = "hugo-researcher"
+disableKinds = ["taxonomy", "term"]
+enableEmoji = true
+math = false          # 
+googleAnalytics = ""  # add your tracking id
+
+[params]
+  author = ""
+  description = ""
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  logo = ""  # url or path to a logo to put in the header
+  [params.footer]
+    text = "©2022 PackControl - All rights reserved"
+    url = ""
+  [params.style]  # appearance options (can be omitted)
+    fontFamily = "Inconsolata"
+    pageWidth = "750px"
+    avatarSize = "90px"
+    colorBlack = "#222222"
+    colorRed = "#dc3545"
+  [[params.socialIcons]]
+    icon = "fab fa-twitter"
+    title = "Twitter"
+    url = "https://twitter.com/"
+  [[params.socialIcons]]
+    icon = "fas fa-envelope"
+    title = "E-mail"
+    url = "mailto:mail@packcontrol.com"
+
+[params.search_config]
+app_id = "04ALMXMGLU"
+api_key = "c5e765ed4c29c7e9aec5f19ad8c1667b"
+index = "link4"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "Field Reference"
+    url = "/about"
+    weight = 1
+  
+  [[menu.main]]
+    name = "Guides"
+    url = "/contact"
+    weight = 2
+
+  [[menu.main]]
+    name = "FAQ"
+    url = "/services"
+    weight = 3
+  
+[menu2]
+  [[menu.main2]]
+    name = "Activity"
+    url = "#"
+    weight = 1
+  
+  [[menu.main2]]
+    name = "Account"
+    url = "#"
+    weight = 2
+
+  [[menu.main2]]
+    name = "MetaField"
+    url = "#"
+    weight = 3
+
+  [[menu.main2]]
+    name = "Location"
+    url = "#"
+    weight = 4
+
+[menu3]
+  [[menu.main3]]
+    name = "Journal"
+    url = "#"
+    weight = 1
+  
+  [[menu.main3]]
+    name = "Transfer"
+    url = "#"
+    weight = 2
+
+  [[menu.main3]]
+    name = "TransferLine"
+    url = "#"
+    weight = 3
+
+
+
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
