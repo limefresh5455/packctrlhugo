@@ -40,54 +40,54 @@ index = "link4"
 [menu]
   [[menu.main]]
     name = "Field Reference"
-    url = "/about"
+    url = "/field_reference"
     weight = 1
   
   [[menu.main]]
     name = "Guides"
-    url = "/contact"
+    url = "/guides"
     weight = 2
 
   [[menu.main]]
     name = "FAQ"
-    url = "/services"
+    url = "/faq"
     weight = 3
   
 [menu2]
   [[menu.main2]]
     name = "Activity"
-    url = "#"
+    url = "/activity"
     weight = 1
   
   [[menu.main2]]
     name = "Account"
-    url = "#"
+    url = "/account"
     weight = 2
 
   [[menu.main2]]
     name = "MetaField"
-    url = "#"
+    url = "/metafield"
     weight = 3
 
   [[menu.main2]]
     name = "Location"
-    url = "#"
+    url = "/location"
     weight = 4
 
 [menu3]
   [[menu.main3]]
     name = "Journal"
-    url = "#"
+    url = "/journal"
     weight = 1
   
   [[menu.main3]]
     name = "Transfer"
-    url = "#"
+    url = "/transfer"
     weight = 2
 
   [[menu.main3]]
     name = "TransferLine"
-    url = "#"
+    url = "/transferline"
     weight = 3
 
 
