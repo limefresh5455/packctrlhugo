@@ -190,3 +190,42 @@ a.sarchtop {
 ul.lgrp h4 {
     font-size: 24px !important;
 }
+
+
+
+/* Style the search field */
+form.exmplsch input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: transparent;
+  border-right: none;
+}
+form.exmplsch input[type=text]:focus {
+    outline: none;
+}
+/* Style the submit button */
+form.exmplsch button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.exmplsch button:hover {
+    background: transparent;
+}
+
+/* Clear floats */
+form.exmplsch::after {
+  content: "";
+  clear: both;
+  display: table;
+}

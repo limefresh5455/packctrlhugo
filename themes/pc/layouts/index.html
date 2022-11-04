@@ -2,6 +2,16 @@
 <div class="container">
     <div class="row">
                     <div class="col-md-3">
+                        <div class="srchbox">
+                            <form class="exmplsch" id="search"
+    action='{{ with .GetPage "" }}{{.Permalink}}{{end}}' method="get">
+    
+    <input type="text" id="search-input" name="query"
+    placeholder="Search">
+   
+    <button type="submit" value="search"><i class="fa fa-search"></i></button>
+</form>
+                        </div>
                         <h3>Master Entities</h3>
                          {{ with .Site.Menus.main2 }}
                     {{ $navbar_len := len . }}
