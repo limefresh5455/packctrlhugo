@@ -1,0 +1,44 @@
+<div class="menuHead">
+<div class="container">
+
+    <nav class="navbar navbar-expand-lg p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+        {{ with .Site.Params.logo }}
+                <img src="{{ . | absURL }}" alt="logo">
+              {{ end }}
+              {{ .Site.Title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+       {{ with .Site.Menus.main }}
+                    {{ $navbar_len := len . }}
+                    {{ range $i, $nav_item := . }}
+                        <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+                            {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                        </a>
+                        {{ if ne (add $i 1) $navbar_len }}
+                            <span class="nav-item navbar-text mx-1">/</span>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+      
+      </ul>
+      <form class="d-flex">
+        <a class="sarchtop" href="/search">
+        <i class="fa fa-search text-white"></i>
+        <span class="srchtext">Search the Docs</span> 
+        </a>      
+      </form>
+    </div>
+  </div>
+</nav>
+
+      
+    </div>
+</div>
+<hr>
