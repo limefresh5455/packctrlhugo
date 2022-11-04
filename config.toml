@@ -1,6 +1,6 @@
 title = "PackControl"
 baseURL = ""
-theme = "hugo-researcher"
+theme = "pc"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false          # 
