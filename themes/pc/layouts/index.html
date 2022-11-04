@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="container">
+    <div class="row">
+                    <div class="col-md-3">
+                        <h3>Master Entities</h3>
+                         {{ with .Site.Menus.main2 }}
+                    {{ $navbar_len := len . }}
+                    {{ range $i, $nav_item := . }}
+                     <ul class="list-group">
+
+                        <li class="list-group-item">
+                            <a class="nav-item nav-link-left" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+                                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                            </a>
+                        </li>
+                    </ul>   
+                    {{ end }}
+                {{ end }}
+                <h3>Master Entities</h3>
+                         {{ with .Site.Menus.main3 }}
+                    {{ $navbar_len := len . }}
+                    {{ range $i, $nav_item := . }}
+                     <ul class="list-group">
+
+                        <li class="list-group-item">
+                            <a class="nav-item nav-link-left" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+                                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                            </a>
+                        </li>
+                    </ul>   
+                    {{ end }}
+                {{ end }}
+                    </div>
+                    <div class="col-md-9">
+                        <div class="midContent">
+                         {{ .Content }}
+                        </div>
+                    </div>
+                    
+    </div>
+    </div>
+{{ end }}
