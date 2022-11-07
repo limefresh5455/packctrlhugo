@@ -229,3 +229,10 @@ form.exmplsch::after {
   clear: both;
   display: table;
 }
+
+ul.lgrp p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding:10px 0;
+}

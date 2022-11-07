@@ -5,7 +5,7 @@ title = "Search"
 <div class="hs-demo container" x-data="searchController" id="search-main" style="
     min-height: 410px;">
     <div class="row mt-5">
-      <div class="col-6">
+      <div class="col-12">
         <div class="hs-container">
           <div class="input-group input-group-lg mb-5">
             <input
@@ -27,7 +27,10 @@ title = "Search"
                  <!--  <img :src="item.image" /> -->
                   <h4 x-text="item.categories"></h4>
                   <a :href="item.permalink" target="_blank"><h5 class="card-title" x-text="item.post_title"></h5></a>
+                  <p x-text="item.content" text-limit="20"></p>
                   <small x-text="item.author_name"></small>
+                  <small class="d-block text-secondary mt-1" x-text="item.post_date_formatted"></small>
+                 <!--  <small class="d-block mt-1">Time to Read:<span class="text-danger mt-1" x-text="item.time_to_read"></span></small> -->
                   <hr/>
                 </li>
               </ul>

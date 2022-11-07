@@ -2240,7 +2240,7 @@ ${r?'Expression: "'+r+`"
                     body: JSON.stringify(t)
                 }).then(i => i.json()).then(i => {
                     if (i.results) {
-                        this.result = i.results[0];
+                        this.result = i.results[0];                       
                         console.log(this.result);
                         let o = this.result.facets.genre;
                         this.result.genre = o ? Object.keys(o).map(a => ({
