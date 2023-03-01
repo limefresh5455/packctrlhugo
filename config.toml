@@ -52,6 +52,11 @@ index = "link4"
     name = "FAQ"
     url = "/faq"
     weight = 3
+    
+[[menu.main]]
+    name = "Contact Us"
+    url = "/"
+    weight = 4
   
 [menu2]
   [[menu.main2]]
