@@ -54,7 +54,7 @@ index = "link4"
     weight = 3
     
 [[menu.main]]
-    name = "Contact Us"
+    name = "Contact"
     url = "/"
     weight = 4
   
